@@ -17,7 +17,7 @@ EXPOSE 80
 RUN  export NG_CLI_ANALYTICS=false \
      && cnpm install \
      && cnpm run build \
-     && cp -r dist/* /var/www/html \
+     && cp -r dist/my-app/* /var/www/html \
      && rm -rf /app
 
 # 启动nginx，关闭守护式运行，否则容器启动后会立刻关闭
