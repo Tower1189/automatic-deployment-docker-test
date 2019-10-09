@@ -22,3 +22,4 @@ RUN  export NG_CLI_ANALYTICS=false \
 
 # 启动nginx，关闭守护式运行，否则容器启动后会立刻关闭
 CMD ["nginx","-g","daemon off;"]
+
